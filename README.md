@@ -104,14 +104,3 @@ Hay **dos workflows independientes**, cada uno disparado solo por cambios en su 
    ya que el deploy real lo va a hacer Actions).
 2. Generar un **Personal Access Token** y copiar el **Site ID** del sitio.
 3. Guardar ambos como secrets en GitHub.
-
-## Qué mostrar en la clase
-
-1. Hacer un cambio en `backend/app/liquidacion.py` (ej: romper un cálculo a propósito)
-   y ver cómo el job `test` falla y el deploy **no** se ejecuta.
-2. Corregirlo, hacer push, y mostrar el pipeline completo: test → deploy → API
-   actualizada en Render.
-3. Repetir lo mismo con un cambio visual en `frontend/src/App.jsx`, mostrando el segundo
-   pipeline corriendo en paralelo e independiente del primero.
-4. Mostrar cómo los `paths:` en cada workflow evitan que un cambio en frontend dispare
-   el pipeline de backend (y viceversa).
