@@ -13,7 +13,7 @@ from app.liquidacion import Liquidacion
 
 app = FastAPI(
     title="API Liquidación de Sueldos",
-    description="Demo de CI/CD - cálculo de liquidación de sueldos de empleados",
+    description="Ledesma Junior - FastAPI + React + Render + Netlify",
     version="1.0.1",
 )
 
