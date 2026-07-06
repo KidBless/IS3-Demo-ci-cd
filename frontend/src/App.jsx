@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL || "https://is3-demo-ci-cd-gaqv.onrender.com/";
+const API_URL = import.meta.env.VITE_API_URL || "https://is3-demo-ci-cd-gaqv.onrender.com";
 
 const formatARS = (value) =>
   new Intl.NumberFormat("es-AR", {
